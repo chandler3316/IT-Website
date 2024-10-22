@@ -18,4 +18,4 @@ To clone and run this project locally:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/chandler3316/IT-Website.git
+   git clone https://github.com/timederper2/IT-Website.git
