@@ -1,97 +1,152 @@
 /* Basic Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f1f5f9;
-    color: #333;
+  font-family: "Roboto", sans-serif;
+  background-color: #f1f5f9;
+  color: #333;
+}
+
+nav {
+  padding: 1.5rem 2rem;
+  background-color: #222831;
+  color: #fff;
 }
 
 /* Header */
 header {
-    text-align: center;
-    padding: 30px;
-    background: linear-gradient(135deg, #004080, #007bbd);
-    color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(135deg, #004080, #007bbd);
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    font-weight: bold;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 header p {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 /* Meeting Details Section */
 #meeting-details {
-    background-color: #ffffff;
-    padding: 25px;
-    margin: 30px auto;
-    border-radius: 12px;
-    max-width: 600px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+  background-color: #ffffff;
+  padding: 25px;
+  margin: 30px auto;
+  border-radius: 12px;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
 }
 
 #meeting-details:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 #meeting-details h2 {
-    color: #004080;
-    font-size: 1.8em;
-    margin-bottom: 10px;
+  color: #004080;
+  font-size: 1.8em;
+  margin-bottom: 10px;
 }
 
 #meeting-details p {
-    line-height: 1.6;
+  line-height: 1.6;
 }
 
 /* Upcoming Events Section */
 #upcoming-events {
-    padding: 30px;
-    margin: 30px auto;
-    max-width: 800px;
-    text-align: center;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 800px;
+  text-align: center;
 }
 
 #upcoming-events h2 {
-    color: #004080;
-    font-size: 2em;
-    margin-bottom: 25px;
+  color: #004080;
+  font-size: 2em;
+  margin-bottom: 25px;
+}
+
+/* Button call */
+.checkbtn {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* default closed menu for mobile */
+.nav-mobile {
+  display: none;
+}
+
+/* menu toggle */
+#check:checked ~ .nav-mobile {
+  display: block;
+}
+
+.nav-mobile {
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  background: #222831;
+  z-index: 1;
+  width: 200px;
+}
+.nav-mobile a {
+  color: #fff;
+  padding: 1rem 1.5rem;
+  display: block;
+}
+
+@media only screen and (max-width: 992px) {
+  .checkbtn {
+    display: block;
+    font-size: 5rem;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+  }
+  .nav-mobile {
+    top: 160px;
+    width: 100%;
+  }
+  .nav-mobile a {
+    font-size: 2rem;
+    padding: 2rem 3rem;
+  }
 }
 
 /* Event Card */
 .event {
-    background-color: #ffffff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-left: 5px solid #004080;
-    border-radius: 8px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #004080;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .event:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .event h3 {
-    color: #004080;
-    font-size: 1.5em;
-    margin-top: 0;
+  color: #004080;
+  font-size: 1.5em;
+  margin-top: 0;
 }
 
 .event p {
-    line-height: 1.5;
-    margin: 8px 0;
+  line-height: 1.5;
+  margin: 8px 0;
 }
