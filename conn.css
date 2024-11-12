@@ -210,4 +210,39 @@ header p {
 .mb-20 {
     margin-bottom: 20px;
 }
+/* Sliding Animations */
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slide-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* Fading Animations */
+.fade {
+    opacity: 0;
+    transition: opacity 0.6s ease; /* Smooth fading */
+}
+
+.fade-visible {
+    opacity: 1;
+}
+/* Fading Animations */
+.fade {
+    opacity: 0;
+    transition: opacity 0.6s ease; /* Smooth fading */
+}
+
+.fade-visible {
+    opacity: 1;
+}
 
